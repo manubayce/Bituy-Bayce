@@ -5,13 +5,20 @@
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    padding-right: 19%;
 }
 
 .navbar-logo {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
     color: #fff;
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 7%;
     cursor: pointer;
+}
+
+.navbar-logo:hover {
+    color: #FFCC00;
 }
 
 .nav-menu {
@@ -28,13 +35,14 @@
 .nav-links {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
 }
 
 .nav-links:hover {
     background: rgba(45, 106, 187, 0.3);
     border-radius: 6px;
     transition: all 0.3s ease-out;
+    color: #FFCC00;
 }
 
 .fa-bars {
@@ -58,7 +66,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 378px;
+        height: 368px;
         position: absolute;
         top: 80px;
         left: -100%;
@@ -67,7 +75,7 @@
     }
 
     .nav-menu.active {
-        background-image: repeating-linear-gradient(135deg, rgba(226, 226, 226,0.06) 0px, rgba(226, 226, 226,0.06) 2px,transparent 2px, transparent 4px),linear-gradient(180deg, rgb(15,15,146),rgb(15,15,146));
+        background-image: repeating-linear-gradient(315deg, rgba(0,0,0,0.08),transparent,rgba(0,0,0,0.02),rgba(0,0,0,0.05),rgba(0,0,0,0.01),rgba(0,0,0,0.07),rgba(0,0,0,0.05),rgba(0,0,0,0.02),rgba(0,0,0,0.04),rgba(0,0,0,0.04),rgba(0,0,0,0.02),rgba(0,0,0,0.1),rgba(0,0,0,0.07),rgba(0,0,0,0.02),rgba(0,0,0,0.07) 3px),linear-gradient(405deg, rgb(50,83,138),rgb(9,32,107));
         left: 0;
         opacity: 1;
         transition: all 0.4s ease;
@@ -88,9 +96,9 @@
 
     .navbar-logo {
         position: absolute;
-        top: 0;
+        top: 6px;
         left: 0;
-        transform: translate(25%, 50%);       
+        transform: translate(25%, 50%);    
     }
 
     .menu-icon {
