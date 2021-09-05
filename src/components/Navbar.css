@@ -1,5 +1,5 @@
 .NavbarItems {
-    background: linear-gradient(90deg, rgb(110,94,254), rgba(73,63,252,1) 100%);
+    background-image: repeating-linear-gradient(315deg, rgba(255,255,255,0.04) 0px, rgba(255,255,255,0.04) 2px,transparent 2px, transparent 4px),linear-gradient(180deg, rgb(17,17,140),rgb(11,96,210));
     height: 80px;
     display: flex;
     justify-content: center;
@@ -32,9 +32,9 @@
 }
 
 .nav-links:hover {
-    background: #6d76f7;
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
+    background: rgba(45, 106, 187, 0.3);
+    border-radius: 6px;
+    transition: all 0.3s ease-out;
 }
 
 .fa-bars {
@@ -43,6 +43,70 @@
 
 .menu-icon {
     display: none;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 988px) {
+    .NavbarItems {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 378px;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        transition: all 0.4s ease;
+    }
+
+    .nav-menu.active {
+        background-image: repeating-linear-gradient(135deg, rgba(226, 226, 226,0.06) 0px, rgba(226, 226, 226,0.06) 2px,transparent 2px, transparent 4px),linear-gradient(180deg, rgb(15,15,146),rgb(15,15,146));
+        left: 0;
+        opacity: 1;
+        transition: all 0.4s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 1.3rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background: rgba(45, 106, 187, 0.5);
+        border-radius: 0;
+    }
+
+    .navbar-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%, 50%);       
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: #fff;
+        font-size: 2rem;
+    }
 }
 
 
